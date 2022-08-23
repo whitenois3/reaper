@@ -4,10 +4,10 @@ pragma solidity ^0.8.0;
 
 import "../interfaces/IStrategy.sol";
 import "../interfaces/IVault.sol";
-import "@openzeppelin/contracts-upgradeable/access/AccessControlEnumerableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
-import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol";
+import "openzeppelin-upgradeable/contracts/access/AccessControlEnumerableUpgradeable.sol";
+import "openzeppelin-upgradeable/contracts/proxy/utils/Initializable.sol";
+import "openzeppelin-upgradeable/contracts/proxy/utils/UUPSUpgradeable.sol";
+import "openzeppelin-upgradeable/contracts/token/ERC20/utils/SafeERC20Upgradeable.sol";
 
 abstract contract ReaperBaseStrategyv4 is IStrategy, UUPSUpgradeable, AccessControlEnumerableUpgradeable {
     using SafeERC20Upgradeable for IERC20Upgradeable;

@@ -4,8 +4,8 @@ import "./abstract/ReaperBaseStrategyv4.sol";
 import "./interfaces/IUniswapV2Router02.sol";
 import "./interfaces/CErc20I.sol";
 import "./interfaces/IComptroller.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC20/utils/SafeERC20Upgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/utils/math/MathUpgradeable.sol";
+import "openzeppelin-upgradeable/contracts/token/ERC20/utils/SafeERC20Upgradeable.sol";
+import "openzeppelin-upgradeable/contracts/utils/math/MathUpgradeable.sol";
 
 pragma solidity 0.8.11;
 
