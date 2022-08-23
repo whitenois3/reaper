@@ -1,21 +1,19 @@
-## welcome to unhacked
+## Unhacked Challenge :: Reaper Farm • [![ci](https://github.com/whitenois3/reaper/actions/workflows/test.yml/badge.svg)](https://github.com/whitenois3/reaper/actions/workflows/test.yml) ![license](https://img.shields.io/github/license/whitenois3/reaper?label=license) ![solidity](https://img.shields.io/badge/solidity-^0.8.0-lightgrey)
 
-_unhacked_ is a weekly ctf, giving whitehats the chance to go back in time before real exploits and recover funds before the bad guys get them. 
+`08/22/2022`
 
-_you are a whitehat, right anon?_
+#### Reaper Farm
 
-## meet reaper
+[Reaper Farm](https://www.reaper.farm/) is a yield aggregator on fantom. their V2 vaults were hacked on 8/2.
 
-[reaper farm](https://www.reaper.farm/) is a yield aggregator on fantom. their V2 vaults were hacked on 8/2.
-
-there were a number of implementations of the vaults with damages totalling $1.7mm, but the exploit was the same on all of them, so let's just focus on one — a DAI vault hacked for over $400k.
+There were a number of implementations of the vaults with damages totalling $1.7mm, but the exploit was the same on all of them, so let's just focus on one — a DAI vault hacked for over $400k.
 
 - vault: [0x77dc33dC0278d21398cb9b16CbFf99c1B712a87A](https://ftmscan.com/address/0x77dc33dc0278d21398cb9b16cbff99c1b712a87a)
 - fantom dai: [0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E](https://ftmscan.com/address/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E)
 
-review the code in this repo, find the exploit, and recover > $400k.
+Review the code in this repo, find the exploit, and recover > $400k.
 
-## how to play
+#### How to play
 
 1. fork this repo and clone it locally.
 
@@ -27,6 +25,6 @@ review the code in this repo, find the exploit, and recover > $400k.
 
 5. post on twitter for bragging rights and tag [@unhackedctf](http://twitter.com/unhackedctf). no cheating.
 
-## subscribe
+#### Shilling @unhacked
 
-for new weekly challenges and solutions, subscribe to the [unhacked newsletter](https://unhackedctf.substack.com/publish/post/69864558).
+For new weekly challenges and solutions, subscribe to the [unhacked newsletter](https://unhackedctf.substack.com/publish/post/69864558).
