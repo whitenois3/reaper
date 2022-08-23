@@ -37,7 +37,10 @@ Review the code in this repo, find the exploit, and recover > $400k.
 The crux of the exploit lies in the `ReaperVaultV2` `redeem()` function. Neither in `redeem` nor the internal `_withdraw` function is there a check that the specified `owner` is equal to the `msg.sender`. This means anyone can redeem anyone else's vault shares for the underlying token and send the underlying token to an arbitrary `recipient` address!
 
 <p align="center">
-  <img src="./assets/exploit.png">
+  <figure width="min-content" align="center">
+    <img src="./assets/exploit.png">
+    <figcaption><i>Source: `src/ReaperVaultV2.sol`. Created using <a target="_blank" href="https://carbon.now.sh">carbon.now.sh</a></i></figcaption>
+  </figure>
 </p>
 
 
