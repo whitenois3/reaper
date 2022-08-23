@@ -39,7 +39,7 @@ The crux of the exploit lies in the `ReaperVaultV2` `redeem()` function. Neither
 <p align="center">
   <figure width="min-content" align="center">
     <img src="./assets/exploit.png">
-    <figcaption><i>Source: `src/ReaperVaultV2.sol`. Created using <a target="_blank" href="https://carbon.now.sh">carbon.now.sh</a></i></figcaption>
+    <figcaption><i>Source: <code>src/ReaperVaultV2.sol</code>. Created using <a target="_blank" href="https://carbon.now.sh">carbon.now.sh</a></i></figcaption>
   </figure>
 </p>
 
