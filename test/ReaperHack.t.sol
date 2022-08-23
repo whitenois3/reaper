@@ -19,8 +19,8 @@ contract CounterTest is Test {
         // We can simply call the redeem function,
         // providing a different owner than recipient.
         // Internally, the redeem function will call the `_withdraw` function,
-        // but neither verify that the recipient is the owner
-        // so we can withdraw _any_ depositor's funds to any recipient address we like!
+        // but neither verify that the msg.sender is the owner, nor that the owner is the recipient.
+        // So we can withdraw _any_ depositor's funds to any recipient address we like!
 
         // Use 3 victim addresses to exceed the 400k ether check
         address victim_a = 0xfc83DA727034a487f031dA33D55b4664ba312f1D;

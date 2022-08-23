@@ -6,6 +6,7 @@
 
 `08/22/2022`
 
+
 #### Reaper Farm
 
 [Reaper Farm](https://www.reaper.farm/) is a yield aggregator on fantom. their V2 vaults were hacked on 8/2.
@@ -16,6 +17,7 @@ There were a number of implementations of the vaults with damages totalling $1.7
 - fantom dai: [0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E](https://ftmscan.com/address/0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E)
 
 Review the code in this repo, find the exploit, and recover > $400k.
+
 
 #### How to play
 
@@ -28,6 +30,16 @@ Review the code in this repo, find the exploit, and recover > $400k.
 4. when you find an exploit, code it up in `ReaperHack.t.sol`. the test will pass if you succeed.
 
 5. post on twitter for bragging rights and tag [@unhackedctf](http://twitter.com/unhackedctf). no cheating.
+
+
+#### Breaking Down The Exploit
+
+The crux of the exploit lies in the `ReaperVaultV2` `redeem()` function. Neither in `redeem` nor the internal `_withdraw` function is there a check that the specified `owner` is equal to the `msg.sender`. This means anyone can redeem anyone else's vault shares for the underlying token and send the underlying token to an arbitrary `recipient` address!
+
+<p align="center">
+  <img src="./assets/exploit.png">
+</p>
+
 
 #### Shilling @unhacked
 
